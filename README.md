@@ -14,15 +14,16 @@ Colin Knowles (@knowlesc) and Ryan McDonald (@ryanmcdonald)
 2) Run gitstats on the codebases
 3) Compare project statistics with social media information
 
-**Milestones**:
+Milestones
+----------
 
-1) Research Stack Exchange API
+**1) Research Stack Exchange API**
 
 Date: March 13
 
 Colin & Ryan
 
-2) Create Python program to automatically retrieve a count of mentions of a certain project from Stack Exchange API
+**2) Create Python program to automatically retrieve a count of mentions of a certain project from Stack Exchange API**
 
   - to start we are going to look at one month out of every year
   - if the program can do that very easily we want to increase the number of data points
@@ -31,7 +32,7 @@ Date: March 17
 
 Colin & Ryan
 
-3) Create Python program to automatically run gitstats and get the data we need from a repository (# of contributors, project size)
+**3) Create Python program to automatically run gitstats and get the data we need from a repository (# of contributors, project size)**
 
   - same as previous, start out taking a snapshot of one month a year, then expand if possible
 
@@ -39,7 +40,7 @@ Date: March 24
 
 Ryan
 
-4) Create Python program to run the previous two programs and graph their outputted data
+**4) Create Python program to run the previous two programs and graph their outputted data**
 
   - we are thinking of using matplotlib for this
 
@@ -47,7 +48,8 @@ Date: March 24
 
 Colin
 
-5) Perform analysis on graphs
+**5) Perform analysis on graphs**
 
 Date: March 30
 
+Colin & Ryan
