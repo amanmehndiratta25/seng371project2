@@ -15,6 +15,7 @@ Colin Knowles (@knowlesc) and Ryan McDonald (@ryanmcdonald)
 3) Compare project statistics with social media information
 
 **Milestones**:
+
 1) Research Stack Exchange API
 Date: March 13
 
