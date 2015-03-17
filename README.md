@@ -53,3 +53,39 @@ Colin
 Date: March 30
 
 Colin & Ryan
+
+
+Milestones Revised (March 17, 2015)
+-----------------------------------
+
+**1) Research Stack Exchange API**
+
+Completed.
+
+**2) Create Python program to automatically retrieve a count of mentions of a certain project from Stack Exchange API**
+
+Completed.
+
+**3) Create Python program to automatically run gitstats and get the data we need from a repository (# of contributors, project size)**
+
+Completed. Decided to use 'git log' instead of git stats.
+
+**4) (NEW!) Create Python program to automatically retrieve a count of mentions of a certain project from Reddit API**
+
+Due date: March 24.
+
+Assigned to: Colin
+
+**5) Create Python program to run the previous three programs and graph their outputted data**
+
+Mostly completed for Stack Exchange and git log data.
+
+Due date: March 24.
+
+Assigned to: Colin and Ryan
+
+**6) Perform analysis on graphs**
+
+Date: March 30.
+
+Assigned to: Colin and Ryan
