@@ -1,0 +1,11 @@
+bootstrap-2010-1 0
+bootstrap-2010-2 0
+bootstrap-2010-3 1
+bootstrap-2010-4 0
+bootstrap-2010-5 0
+bootstrap-2010-6 1
+bootstrap-2010-7 1
+bootstrap-2010-8 0
+bootstrap-2010-9 1
+bootstrap-2010-10 1
+bootstrap-2010-11 2
