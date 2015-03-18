@@ -62,9 +62,10 @@ def read_stats(output_file):
 	return dates, values
 
 x, y = read_stats("gitlog_rails_data.txt")
-plot(x, y)
+plot(x, y, label="number of contributors")
 x, y = read_stack("ruby-on-rails-stack-api-counts.txt")
-plot(x, y)
+plot(x, y, label="stack overflow questions created")
 x, y = read_reddit("ruby-on-rails-reddit-data.txt")
-plot(x, y)
+plot(x, y, label="new reddit submissions")
+plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3, ncol=3, mode="expand", borderaxespad=0.)
 show()
