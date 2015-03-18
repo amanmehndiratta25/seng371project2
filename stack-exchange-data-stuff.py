@@ -105,7 +105,7 @@ def main():
 		print "Enter tag to search for: "
 		tag = str(raw_input(">> "))
 		
-	output_file = tag + "-api-counts.txt"
+	output_file = tag + "-stack-api-counts.txt"
 
 	tags = read_existing(output_file)
 
