@@ -28,12 +28,11 @@ Milestones (Revised March 24, 2015)
 |#|Milestone|Date|Assignee|Status|
 |----|---------|----|------------|------|
 |1|**Research Stack Exchange API**|Mar. 13|Ryan|Completed|
-|2|**Create Python program to automatically retrieve a count of mentions of a certain project from Stack Exchange API**|Mar. 17|Ryan|Completed|
+|2|**Create Python program to automatically retrieve a count of mentions of a certain project from Stack Exchange API**|Mar. 17|Colin|Completed|
 |3|**Create Python program to automatically run git log and get the data we need from a repository (# of contributors, project size)**|Mar. 17|Ryan|Completed|
 |4|**Create Python program to automatically retrieve a count of mentions of a certain project from Reddit API**|Mar. 24|Colin|In progress|
-|5|**Create Python program to automatically retrieve a count of mentions of a certain project from Reddit API**|Mar. 24|Colin|In progress|
-|6|**Create Python program to run the previous three programs and graph their outputted data**|Mar. 30|Colin and Ryan|In progress|
-|7|**Perform analysis on graphs**|Apr. 1|Colin and Ryan|In progress|
+|5|**Create Python program to run the previous three programs and graph their outputted data**|Mar. 30|Everyone|In progress|
+|6|**Perform analysis on graphs**|Apr. 1|Everyone|In progress|
 
 Tools
 -----
