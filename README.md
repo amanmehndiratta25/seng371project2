@@ -4,9 +4,9 @@ Colin Knowles (@knowlesc) and Ryan McDonald (@ryanmcdonald)
 
 Question
 -------
-Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or do social media mentions drive the contributors/size?
+Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media? 
 
-**Hypotheses**: We think that the number of contributors/project size should drive the mentions on social media. We think that in order to gain a "foothold" on social media-type sites, a project would need a certain number of contributors, so we will see the contributors increase dramatically before we see social media mentions start to increase.
+**Hypotheses**: We think that the number of contributors/project size should drive the mentions on social media. We think that in order to gain a "foothold" on social media-type sites, a project would need a certain number of contributors, so we will see the contributors increase dramatically before we see social media mentions start to increase. After this initial activity..... who knows what will happen.
 
 Datasets
 -------
