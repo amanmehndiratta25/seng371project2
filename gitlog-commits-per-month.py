@@ -20,17 +20,17 @@ def main():
 
     for year in years:
         for month in months:
-            since = str(year) + "-" + str(month) + "-01"
+            since = str(year) + "-" + str(month)
 
-            until = str(year) + "-" + str(month + 1) + "-01"
+            until = str(year) + "-" + str(month + 1)
             if month == 12:
-                until = str(year + 1) + "-01-01"
+                until = str(year + 1) + "-01"
 
-            gitShortlogProcess = subprocess.Popen(("git", "-C", repo_directory, "shortlog", "--since", since, "--until", until), stdout=subprocess.PIPE)
+            gitShortlogProcess = subprocess.Popen(("git", "-C", repo_directory, "shortlog", "--since", since + "-01", "--until", until  + "-01"), stdout=subprocess.PIPE)
             grepProcess = subprocess.Popen(("grep", "-E", "^[ ]+\w+"), stdin=gitShortlogProcess.stdout, stdout=subprocess.PIPE)
             numberOfCommits = subprocess.check_output(("wc", "-l"), stdin=grepProcess.stdout)
 
-            file.write(since + " " + str(numberOfCommits))
+            file.write(since + " " + str(int(numberOfCommits)) + '\n')
 
 if __name__ == "__main__":
 	main()

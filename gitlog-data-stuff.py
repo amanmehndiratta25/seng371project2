@@ -20,16 +20,16 @@ def main():
 
     for year in years:
         for month in months:
-            since = str(year) + "-" + str(month) + "-01"
+            since = str(year) + "-" + str(month) 
 
-            until = str(year) + "-" + str(month + 1) + "-01"
+            until = str(year) + "-" + str(month + 1) 
             if month == 12:
-                until = str(year + 1) + "-01-01"
+                until = str(year + 1) + "-01"
 
-            gitShortlogProcess = subprocess.Popen(("git", "-C", repo_directory, "shortlog", "-s", "-n", "--since", since, "--until", until), stdout=subprocess.PIPE)
+            gitShortlogProcess = subprocess.Popen(("git", "-C", repo_directory, "shortlog", "-s", "-n", "--since", since + "-01", "--until", until + "-01"), stdout=subprocess.PIPE)
             numberOfContributors = subprocess.check_output(("wc", "-l"), stdin=gitShortlogProcess.stdout)
 
-            file.write(since + " " + str(numberOfContributors))
-
+            file.write(since + " " + str(int(numberOfContributors)) + '\n')
+			
 if __name__ == "__main__":
 	main()
