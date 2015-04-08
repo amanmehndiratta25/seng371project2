@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function validate() {
+	var file1name = document.forms["fileForm"]["file1"].value;
+	var file2name = document.forms["fileForm"]["file2"].value;
+	var file3name = document.forms["fileForm"]["file3"].value;
+	var file4name = document.forms["fileForm"]["file4"].value;
+	var file1desc = document.forms["fileForm"]["file1desc"].value;
+	var file2desc = document.forms["fileForm"]["file2desc"].value;
+	var file3desc = document.forms["fileForm"]["file3desc"].value;
+	var file4desc = document.forms["fileForm"]["file4desc"].value;
+	if ((!file1name)&&(!file2name)&&(!file3name)&&(!file4name)) {
+		alert("Please upload a dataset text file.");
+		return false;
+	}
+	if ((file1name)&&(!file1desc)) {
+		alert("Please enter a description for dataset 1.");
+		return false;
+	}
+	if ((file2name)&&(!file2desc)) {
+		alert("Please enter a description for dataset 2.");
+		return false;
+	}
+	if ((file3name)&&(!file3desc)) {
+		alert("Please enter a description for dataset 3.");
+		return false;
+	}
+	if ((file4name)&&(!file4desc)) {
+		alert("Please enter a description for dataset 4.");
+		return false;
+	}
+	return true;
+}
+</script>
+
+<body>
+
+<form name="fileForm" action="graph" method="post" onsubmit="return validate()" enctype="multipart/form-data">
+  <input type="file" name="file1" accept=".txt">
+  <input type="text" name="file1desc">
+  <br>
+  <input type="file" name="file2" accept=".txt">
+  <input type="text" name="file2desc">
+  <br>
+  <input type="file" name="file3" accept=".txt">
+  <input type="text" name="file3desc">
+  <br>
+  <input type="file" name="file4" accept=".txt">
+  <input type="text" name="file4desc">
+  <br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
