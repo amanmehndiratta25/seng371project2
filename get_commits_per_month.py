@@ -6,7 +6,7 @@ def main():
     	repo_directory = str(sys.argv[1])
         output_file = str(sys.argv[2])
     else:
-    	print "Usage: gitlog-commits-per-month.py <repo_directory> <output_file_path>"
+    	print "Usage: get_commits_per_month.py <repo_directory> <output_file_path>"
         sys.exit(2)
 
     # Run git shortlog --since <date> --until <date> | grep -E '^[ ]+\w+' | wc -l

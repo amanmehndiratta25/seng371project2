@@ -6,7 +6,7 @@ def main():
     	repo_directory = str(sys.argv[1])
         output_file = str(sys.argv[2])
     else:
-    	print "Usage: gitlog-data-stuff.py <repo_directory> <output_file_path>"
+    	print "Usage: get_contributors_per_month.py <repo_directory> <output_file_path>"
         sys.exit(2)
 
     # Run git shortlog -s -n --since <date> --until <date> | wc -l
