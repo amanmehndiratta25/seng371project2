@@ -39,6 +39,7 @@ Milestones (Revised March 24, 2015)
 Tools
 -----
 our python scripts - todo
+required libraries: matplotlib (sometimes comes with python, can be found online easily), mpld3, praw (for reddit)
 (need instructions too)
 
 Results
