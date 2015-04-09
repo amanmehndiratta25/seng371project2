@@ -14,7 +14,15 @@ Datasets
 
 **APIs**: [Stack Exchange API](https://api.stackexchange.com), [Reddit API](http://www.reddit.com/dev/api)
 
-**Metrics**: & justification (todo)
+**Metrics**:
+To answer our project question, we needed two compare two categories of projects: Project Size vs Social Media Activity. Using these two sets of metrics we can try to determine whether or not there is a correlation.
+
+- Project Size
+  - Number of contributors per month
+  - Number of commits per month
+- Social Media Activity
+  - Number of posts for each month in the Subreddits for each project
+  - Number of Stack Overflow questions asked in a weekly period of each month that are tagged with the appropriate project tag
 
 Methodology
 --------
@@ -62,7 +70,13 @@ graph:
 
 Results
 -----
-analysis, answer to question, threats to validity, future work
+- Analysis
+
+- Answer to question
+
+- Threats to Validity
+
+- Future Work
 
 Demo
 -----
