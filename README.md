@@ -33,13 +33,31 @@ Milestones (Revised March 24, 2015)
 |2|**Create Python program to automatically retrieve a count of mentions of a certain project from Stack Exchange API**|Mar. 17|Colin|Completed|
 |3|**Create Python program to automatically run git log and get the data we need from a repository (# of contributors, project size)**|Mar. 17|Ryan|Completed|
 |4|**Create Python program to automatically retrieve a count of mentions of a certain project from Reddit API**|Mar. 24|Colin|In progress|
-|5|**Create Python program to run the previous three programs and graph their outputted data**|Mar. 30|Everyone|In progress|
+|5|**Create Python program to run the previous three programs and graph their outputted data**|Mar. 30|Everyone|Completed|
 |6|**Perform analysis on graphs**|Apr. 1|Everyone|In progress|
 
 Tools
 -----
 our python scripts - todo
-required libraries: matplotlib (sometimes comes with python, can be found online easily), mpld3, praw (for reddit)
+required libraries: pip:
+	wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+	python get-pip.py 
+	(if pip is not installed this way, there may be a conflict installing requests [https://bugs.launchpad.net/ubuntu/+source/python-pip/+bug/1306991] and you will have to reinstall pip this way to fix it)
+reddit: 
+	praw (sudo pip install praw)
+	notes: nonexistent subreddit will cause error
+stack: 
+	requests (sudo pip install requests[security]) (security is needed)
+	may need to put the api key in quotes if it's failing
+graph:
+	batch script for windows, otherwise python run.py
+	Flask (sudo pip install flask)
+	mpld3 (sudo pip install mpld3)
+	matplotlib (sometimes comes with python, can be found online easily) (sudo pip install python-matplotlib)
+		if this doens't work, try (sudo apt-get install python-matplotlib)
+		may also need to do (sudo apt-get install python-tk if it still complains)
+
+
 (need instructions too)
 
 Results
