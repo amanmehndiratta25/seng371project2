@@ -78,7 +78,7 @@ def main():
         output_file = str(sys.argv[2])
         key = str(sys.argv[3])
     else:
-        print "Usage: get_reddit_posts_per_month.py <tag> <output_file_path> <api_key(OPTIONAL)>"
+        print "Usage: get_stack_overflow_posts_per_month.py <tag> <output_file_path> <api_key(OPTIONAL)>"
         sys.exit(2)
 
     tags = read_existing(output_file)
