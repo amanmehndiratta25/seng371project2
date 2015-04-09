@@ -33,15 +33,9 @@ def graph_results(datasets):
 			print "using rolling average"
 			use_avg = True
 
-
-
-
-
 	x_array = []
 	y_array = []
 	label_array = []
-
-	# ====== read data ===== 
 	
 	for label in datasets.keys():
 		x, y, y_avg = read_data([s.strip() for s in datasets[label].splitlines()])
@@ -50,40 +44,9 @@ def graph_results(datasets):
 		x_array.append(x)
 		y_array.append(y)
 		label_array.append(label)
-	
-		
-	'''
-	x, y, y_avg = read_data("../rails.txt")
-	label="number of contributors"
-	if use_avg == True:
-		y = y_avg
-
-	x_array.append(x)
-	y_array.append(y)
-	label_array.append(label)
-
-	x, y, y_avg = read_data("../ruby-on-rails-stack-api-counts.txt")
-	label="stack overflow questions created"
-	if use_avg == True:
-		y = y_avg
-		
-	x_array.append(x)
-	y_array.append(y)
-	label_array.append(label)
-
-	x, y, y_avg = read_data("../ruby-on-rails-reddit-data.txt")
-	label="new reddit submissions"
-	if use_avg == True:
-		y = y_avg
-		
-	x_array.append(x)
-	y_array.append(y)
-	label_array.append(label)
-'''
-	# ====== read data ===== 
 		
 	# Draw lines
-	fig = plt.figure() 
+	fig = plt.figure(figsize=(13, 7), dpi=100) 
 	plt.xlabel('Date')
 	plt.ylabel('Percentage of maximum value')
 	ax = fig.add_subplot(111)
@@ -108,4 +71,4 @@ def graph_results(datasets):
 
 	html = mpld3.fig_to_html(fig)
 
-	return "<center>" + html
+	return html

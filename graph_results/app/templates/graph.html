@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <title>GraphResults</title>
+    <center>
+    <a href="/">Go Back</a>
+    {% if results %}
+        {{ results|safe }}
+    {% endif %}
+    
+    Use the buttons on the bottom left of the graph to reset the view, move around, and zoom in.
+    If the graph is too big, you can zoom the browser out ("ctrl" + "-").
+
+    </center>
+</html>
