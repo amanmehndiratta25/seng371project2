@@ -26,12 +26,15 @@ To answer our project question, we needed two compare two categories of projects
 
 Methodology
 --------
-1) Figure out how to use the APIs of some social media sites
-2) Search for mentions of certain projects by date using these APIs
-2) Run git log on the codebases to get the number of contributors
-3) Compare project statistics with social media information
+1) Research Stack Exchange and Reddit API's
 
-**TODO: Go into more detail on methodology**
+2) Write a python script to utilize the API's to search for mentions of certain projects by date using these APIs
+
+3) Run git log on the codebases to get the number of contributors per month
+
+4) Run git log on the codebases to get the number of commits per month
+
+5) Compare project size with social media information. Use matplotlib to graph the outputs together and see if there is any correlation.
 
 Milestones (Revised March 24, 2015)
 -----------------------------------
