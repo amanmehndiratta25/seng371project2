@@ -2,8 +2,6 @@ import praw
 import datetime
 import sys 
 
-
-
 def get_reddit_data(subreddit, output_file):
     agent = subreddit + "_python_post_count_script"
     reddit = praw.Reddit(user_agent=agent)

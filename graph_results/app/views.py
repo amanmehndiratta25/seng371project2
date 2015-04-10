@@ -42,7 +42,17 @@ def graph():
             datasets[desc] = data.read()
     except:
         pass
+        
+    avg = False
+    try: 
+        box = request.form['avg']
+        if box:
+            avg = True
+    except:
+        pass
+        
+    print avg
     
-    return render_template('graph.html', results = GraphResults.graph_results(datasets))
+    return render_template('graph.html', results = GraphResults.graph_results(datasets, avg))
     
 

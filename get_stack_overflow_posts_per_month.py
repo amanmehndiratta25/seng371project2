@@ -4,13 +4,6 @@ import time
 import datetime
 import os.path
 
-'''
-    Need Requests (pip install requests[security])
-    Need numpy http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
-    Need matplotlib, 
-    Might also need this: http://aka.ms/vcpython27
-'''
-
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 years = [2010, 2011, 2012, 2013, 2014]
 days = [5, 12]

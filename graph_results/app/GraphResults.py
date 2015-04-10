@@ -25,8 +25,7 @@ def read_data(data):
 		values_avg = values_avg + [float((float(values[i]) + float(values[max(i-1, 0)]) + float(values[min(i+1, len(values) - 1)]))/3.0)]
 	return dates, values, values_avg
 
-def graph_results(datasets):
-	use_avg = False
+def graph_results(datasets, avg):
 		
 	if len(sys.argv) == 2:
 		if sys.argv[1] == "-avg":
@@ -39,7 +38,7 @@ def graph_results(datasets):
 	
 	for label in datasets.keys():
 		x, y, y_avg = read_data([s.strip() for s in datasets[label].splitlines()])
-		if use_avg == True:
+		if avg == True:
 			y = y_avg
 		x_array.append(x)
 		y_array.append(y)
