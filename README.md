@@ -148,8 +148,8 @@ When you click the "submit" button, the the data will be put into a chart for yo
 Results
 -----
 
-![Bootstrap](http://i.imgur.com/8SUoNgH.png)
-![Angular](http://i.imgur.com/Wv33fk1.png)
+![Bootstrap](http://i.imgur.com/vhOOFPq.png)
+![Angular](http://i.imgur.com/AveyEZA.png)
 ![Rails](http://i.imgur.com/nWQXc4t.png)
 
 - Analysis
