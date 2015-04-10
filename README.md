@@ -6,7 +6,7 @@ Question
 -------
 Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media? 
 
-**Hypotheses**: We think that the number of contributors/project size should drive the mentions on social media. We think that in order to gain a "foothold" on social media-type sites, a project would need a certain number of contributors, so we will see the contributors increase dramatically before we see social media mentions start to increase. After this initial activity..... who knows what will happen.
+**Hypothesis**: We think that the number of contributors/project size should drive the mentions on social media. We think that in order to gain a "foothold" on social media-type sites, a project would need a certain number of contributors, so we will see the contributors increase dramatically before we see social media mentions start to increase. After this initial activity..... who knows what will happen.
 
 Datasets
 -------
@@ -53,59 +53,97 @@ Installing Dependencies
 This section assumes you are going to use pip to install the python modules. Something else like easy_install would almost definitely work as well, but it hasn't been tested. It is strongly suggested that you do everything in the following order, as the requests module can be a real pain to update and will break older versions of pip really easily.
 
 *make sure pip is up to date*
-- if you don't already have pip installed, use this installer: 
+- If you don't already have pip installed, use this installer: 
 	https://bootstrap.pypa.io/get-pip.py
 ![](http://i.imgur.com/MTm6Omv.png)
 
 *upgrade requests*
-- if you don't upgrade requests, bad things will happen when you try the next few steps. 
+- If you don't upgrade requests, bad things will happen when you try the next few steps. 
 - ![](http://i.imgur.com/dXnZ3tt.png)
-- now you can install the extras to prevent the annoying InsecurePlatformWarning warnings
+- Now you can install the extras to prevent the annoying InsecurePlatformWarning warnings.
 - ![](http://i.imgur.com/K8fEvyJ.png)
-- if you get to this step without any problems, the rest should be easy.
-- if you start seeing something like this when you try to use pip, you'll have to reinstall pip and try again. It's a [known bug](https://bugs.launchpad.net/ubuntu/+source/python-pip/+bug/1306991).
+- If you get to this step without any problems, the rest should be easy.
+- If you start seeing something like this when you try to use pip, you'll have to reinstall pip and try again. It's a [known bug](https://bugs.launchpad.net/ubuntu/+source/python-pip/+bug/1306991).
 - ![](http://i.imgur.com/ba7JJUu.png)
 
 *install praw*
-- install the latest version
+- Install the latest version.
 - ![](http://i.imgur.com/bkfctYc.png)
--  if you didn't follow the previous steps and install praw with an old version of pip such as 1.5.4, it will try to update requests and destroy pip as in the screenshot above.
+- If you install praw with an old version of pip such as 1.5.4, it will try to update requests and destroy pip as in the screenshot above.
 
 *install flask*
-- install the latest version
+- Install the latest version.
 - ![](http://i.imgur.com/b1BaGzk.png)
 
 *install matplotlib*
-- good luck doing this without running into problems
-- the best way is to just get a python distribution with matplotlib included, but if you don't have such a version....
-- on linux, I was able to just do this:
+- Good luck doing this without running into problems.
+- The best way is to just get a python distribution with matplotlib included, but if you don't have such a version....
+- On linux,this should work:
 - ![](http://i.imgur.com/aLsLjF0.png)
-- if you try doing that and you get an error about freetype, see [here](http://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv).
+- If you try doing that and you get an error about freetype, see [here](http://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv).
 
 *install Tkinter*
-- if you have a python distribution with matplotlib included, or depending on how you installed matplotlib, Tkinter might also be included .
-- you can always run the check_dependencies.py script and see if it tells you you need Tkinter.
-- on linux, this works:
+- If you have a python distribution with matplotlib included, or depending on how you installed matplotlib, Tkinter might already be included.
+- You can always run the check_dependencies.py script and see if it tells you you need Tkinter.
+- On linux, this should work:
 - ![](http://i.imgur.com/T8Xpu6Q.png)
 
 *install mpld3*
-- install the latest version
+- Install the latest version.
 - ![](http://i.imgur.com/FbcvXkK.png)
 
 *double check*
-- clone the repository
+- Clone the repository.
 - ![](http://i.imgur.com/np2dJmt.png)
-- run the check dependencies script
+- Run the check dependencies script.
 - ![](http://i.imgur.com/1fQxh4h.png)
-- if you don't see that message, you probably missed a step!
+- If you don't see that message, you probably missed a step!
+- If you did see that message, nice work!
 
 Running the Scripts
 -----
+
 ######get_commits_per_month.py
+
+Usage: get_commits_per_month.py <repo_directory> <output_file_path>
+
+Description: Looks at a cloned repository and outputs a list of months with a count of how many commits there were in each month.
+
 ######get_contributors_per_month.py
+
+Usage: get_contributors_per_month.py <repo_directory> <output_file_path>
+
+Description: Looks at a cloned repository and outputs a list of months with a count of how many contributors there were in each month.
+
 ######get_reddit_posts_per_month.py
+
+Usage: get_reddit_posts_per_month.py <subreddit> <output_file_path>
+
+Description: Looks at a subreddit and outputs a list of months with a count of how many new posts there were in each month.
+
 ######get_stack_overflow_posts_per_month.py
 
+Usage: get_stack_overflow_posts_per_month.py <tag> <output_file_path> <api_key(OPTIONAL)>
+Description: Looks at a tag on Stack Overflow and outputs a list of months with a count of how many new questions there were in each month.
+
+
+Graphing the Output
+-------
+Each of the four scripts above will output a file in the following format:
+
+![](http://i.imgur.com/zc7Uu9F.png)
+
+Our GraphResults app allows you to pick and choose up to 4 data sets in this format to graph together. This means you can graph the four different sets of data (commits, contributors, reddit posts, stack overflow posts) for the same repository, or you can graph the same set of data for all three repositories (Angular, Bootstrap, Rails).
+
+To run the app, navigate to the graph_results subfolder in our repository and run the run.py script. If you're lazy and running on Windows, there's a batch script in the same folder that does that single command for you.
+
+![](http://i.imgur.com/eZSz8B8.png)
+
+If you see something like this, then you can navigate to http://127.0.0.1:5000 to use the app. The initial screen lets you pick up to 4 datasets. You must give each a label, with no duplicate labels. The datasets for the three repositories of interest to us (Angular, Rails, Bootstrap) are already in the sample_output folder, so you can choose those, or make your own using the 4 scripts above. 
+
+![](http://i.imgur.com/8Em3gcb.png)
+
+When you click the "submit" button, the the data will be put into a chart for your viewing pleasure.
 
 Results
 -----
