@@ -139,7 +139,7 @@ To run the app, navigate to the graph_results subfolder in our repository and ru
 
 ![](http://i.imgur.com/eZSz8B8.png)
 
-If you see something like this, then you can navigate to http://127.0.0.1:5000 to use the app. The initial screen lets you pick up to 4 datasets. You must give each a label, with no duplicate labels. The datasets for the three repositories of interest to us (Angular, Rails, Bootstrap) are already in the sample_output folder, so you can choose those, or make your own using the 4 scripts above. 
+If you see something like this, then you can navigate to http://127.0.0.1:5000 to use the app. The initial screen lets you pick up to 4 datasets. You must give each a label, with no duplicate labels. The datasets for the three repositories of interest to us (Angular, Rails, Bootstrap) are already in the sample_output folder, so you can choose those, or make your own using the 4 scripts above. It's recommended that you check the "use rolling average" box, as that makes the data smoother and easier to see overall trends.
 
 ![](http://i.imgur.com/8Em3gcb.png)
 
@@ -159,6 +159,7 @@ Results
 - Threats to Validity
 
 - Future Work
+Adjustable timeframes for the scripts, script to run all 4 scripts together, more metrics. 
 
 Demo
 -----
