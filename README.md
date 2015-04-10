@@ -73,6 +73,11 @@ graph:
 
 Results
 -----
+
+![Bootstrap](http://i.imgur.com/8SUoNgH.png)
+![Angular](http://i.imgur.com/Wv33fk1.png)
+![Rails](http://i.imgur.com/nWQXc4t.png)
+
 - Analysis
 
 - Answer to question
