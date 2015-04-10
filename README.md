@@ -135,7 +135,7 @@ Each of the four scripts above will output a file in the following format:
 
 Our GraphResults app allows you to pick and choose up to 4 data sets in this format to graph together. This means you can graph the four different sets of data (commits, contributors, reddit posts, stack overflow posts) for the same repository, or you can graph the same set of data for all three repositories (Angular, Bootstrap, Rails).
 
-To run the app, navigate to the graph_results subfolder in our repository and run the run.py script. If you're lazy and running on Windows, there's a batch script in the same folder that does that single command for you.
+To run the app, navigate to the graph_results subfolder in our repository and run the run.py script.
 
 ![](http://i.imgur.com/eZSz8B8.png)
 
