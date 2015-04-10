@@ -50,75 +50,62 @@ Milestones (Revised March 24, 2015)
 Installing Dependencies
 -----
 
-This section assumes you are going to use pip to install the python modules. Something else like easy_install would almost definitely work as well, but it hasn't been tested. 
-
-It is strongly suggested that you do everything in the following order, as the requests module can be a real pain to update.
+This section assumes you are going to use pip to install the python modules. Something else like easy_install would almost definitely work as well, but it hasn't been tested. It is strongly suggested that you do everything in the following order, as the requests module can be a real pain to update and will break older versions of pip really easily.
 
 *make sure pip is up to date*
 - if you don't already have pip installed, use this installer: 
 	https://bootstrap.pypa.io/get-pip.py
+![](http://i.imgur.com/MTm6Omv.png)
 
 *upgrade requests*
 - if you don't upgrade requests, bad things will happen when you try the next few steps. 
+- ![](http://i.imgur.com/dXnZ3tt.png)
 - now you can install the extras to prevent the annoying InsecurePlatformWarning warnings
+- ![](http://i.imgur.com/K8fEvyJ.png)
 - if you get to this step without any problems, the rest should be easy.
-- if you see something like this, you'll have to reinstall pip and try again.
+- if you start seeing something like this when you try to use pip, you'll have to reinstall pip and try again. It's a [known bug](https://bugs.launchpad.net/ubuntu/+source/python-pip/+bug/1306991).
+- ![](http://i.imgur.com/ba7JJUu.png)
 
 *install praw*
 - install the latest version
--  if you didn't follow the previous steps and install praw with an old version of pip such as 1.5.4, it will try to update requests and destroy pip.
+- ![](http://i.imgur.com/bkfctYc.png)
+-  if you didn't follow the previous steps and install praw with an old version of pip such as 1.5.4, it will try to update requests and destroy pip as in the screenshot above.
 
 *install flask*
 - install the latest version
+- ![](http://i.imgur.com/b1BaGzk.png)
 
 *install matplotlib*
 - good luck doing this without running into problems
 - the best way is to just get a python distribution with matplotlib included, but if you don't have such a version....
 - on linux, I was able to just do this:
-- if you try doing that and you get an error about freetype, see here http://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv
+- ![](http://i.imgur.com/aLsLjF0.png)
+- if you try doing that and you get an error about freetype, see [here](http://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv).
 
 *install Tkinter*
-- if you have a python distribution with matplotlib included, or depending on how you installed matplotlib, Tkinter might also be included already
+- if you have a python distribution with matplotlib included, or depending on how you installed matplotlib, Tkinter might also be included .
 - you can always run the check_dependencies.py script and see if it tells you you need Tkinter.
 - on linux, this works:
+- ![](http://i.imgur.com/T8Xpu6Q.png)
 
 *install mpld3*
 - install the latest version
+- ![](http://i.imgur.com/FbcvXkK.png)
 
+*double check*
+- clone the repository
+- ![](http://i.imgur.com/np2dJmt.png)
+- run the check dependencies script
+- ![](http://i.imgur.com/1fQxh4h.png)
+- if you don't see that message, you probably missed a step!
 
+Running the Scripts
+-----
+######get_commits_per_month.py
+######get_contributors_per_month.py
+######get_reddit_posts_per_month.py
+######get_stack_overflow_posts_per_month.py
 
-
-
-
-
-
-
-
-
-
-
-
-our python scripts - todo
-required libraries: pip:
-	wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-	python get-pip.py 
-	(if pip is not installed this way, there may be a conflict installing requests [https://bugs.launchpad.net/ubuntu/+source/python-pip/+bug/1306991] and you will have to reinstall pip this way to fix it)
-reddit: 
-	praw (sudo pip install praw)
-	notes: nonexistent subreddit will cause error
-stack: 
-	requests (sudo pip install requests[security]) (security is needed)
-	may need to put the api key in quotes if it's failing
-graph:
-	batch script for windows, otherwise python run.py
-	Flask (sudo pip install flask)
-	mpld3 (sudo pip install mpld3)
-	matplotlib (sometimes comes with python, can be found online easily) (sudo pip install python-matplotlib)
-		if this doens't work, try (sudo apt-get install python-matplotlib)
-		may also need to do (sudo apt-get install python-tk if it still complains)
-
-
-(need instructions too)
 
 Results
 -----
