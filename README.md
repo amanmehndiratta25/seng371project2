@@ -26,15 +26,15 @@ To answer our project question, we needed two compare two categories of projects
 
 Methodology
 --------
-1) Research Stack Exchange and Reddit API's
+1) Research Stack Exchange and Reddit APIs
 
-2) Write a python script to utilize the API's to search for mentions of certain projects by date using these APIs
+2) Write a python script to utilize the APIs to search for mentions of certain projects by date using these APIs
 
 3) Run git log on the codebases to get the number of contributors per month
 
 4) Run git log on the codebases to get the number of commits per month
 
-5) Compare project size with social media information. Use matplotlib to graph the outputs together and see if there is any correlation.
+5) Compare project size with social media information. Use matplotlib to graph the outputs together and see if there is any correlation. Make graphs look super cool.
 
 Milestones (Revised March 24, 2015)
 -----------------------------------
@@ -47,8 +47,57 @@ Milestones (Revised March 24, 2015)
 |5|**Create Python program to run the previous three programs and graph their outputted data**|Mar. 30|Everyone|Completed|
 |6|**Perform analysis on graphs**|Apr. 1|Everyone|In progress|
 
-Tools
+Installing Dependencies
 -----
+
+This section assumes you are going to use pip to install the python modules. Something else like easy_install would almost definitely work as well, but it hasn't been tested. 
+
+It is strongly suggested that you do everything in the following order, as the requests module can be a real pain to update.
+
+*make sure pip is up to date*
+- if you don't already have pip installed, use this installer: 
+	https://bootstrap.pypa.io/get-pip.py
+
+*upgrade requests*
+- if you don't upgrade requests, bad things will happen when you try the next few steps. 
+- now you can install the extras to prevent the annoying InsecurePlatformWarning warnings
+- if you get to this step without any problems, the rest should be easy.
+- if you see something like this, you'll have to reinstall pip and try again.
+
+*install praw*
+- install the latest version
+-  if you didn't follow the previous steps and install praw with an old version of pip such as 1.5.4, it will try to update requests and destroy pip.
+
+*install flask*
+- install the latest version
+
+*install matplotlib*
+- good luck doing this without running into problems
+- the best way is to just get a python distribution with matplotlib included, but if you don't have such a version....
+- on linux, I was able to just do this:
+- if you try doing that and you get an error about freetype, see here http://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv
+
+*install Tkinter*
+- if you have a python distribution with matplotlib included, or depending on how you installed matplotlib, Tkinter might also be included already
+- you can always run the check_dependencies.py script and see if it tells you you need Tkinter.
+- on linux, this works:
+
+*install mpld3*
+- install the latest version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 our python scripts - todo
 required libraries: pip:
 	wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
