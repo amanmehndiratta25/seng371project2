@@ -105,25 +105,26 @@ Running the Scripts
 
 ######get_commits_per_month.py
 
-Usage: get_commits_per_month.py \<repo_directory> \<output_file_path>
+Usage: `get_commits_per_month.py \<repo_directory> \<output_file_path>`
 
 Description: Looks at a cloned repository and outputs a list of months with a count of how many commits there were in each month.
 
 ######get_contributors_per_month.py
 
-Usage: get_contributors_per_month.py \<repo_directory> \<output_file_path>
+Usage: `get_contributors_per_month.py \<repo_directory> \<output_file_path>`
 
 Description: Looks at a cloned repository and outputs a list of months with a count of how many contributors there were in each month.
 
 ######get_reddit_posts_per_month.py
 
-Usage: get_reddit_posts_per_month.py \<subreddit> \<output_file_path>
+Usage: `get_reddit_posts_per_month.py \<subreddit> \<output_file_path>`
 
 Description: Looks at a subreddit and outputs a list of months with a count of how many new posts there were in each month.
 
 ######get_stack_overflow_posts_per_month.py
 
-Usage: get_stack_overflow_posts_per_month.py \<tag> \<output_file_path> \<api_key(OPTIONAL)>
+Usage: `get_stack_overflow_posts_per_month.py \<tag> \<output_file_path> \<api_key(OPTIONAL)>`
+
 Description: Looks at a tag on Stack Overflow and outputs a list of months with a count of how many new questions there were in each month.
 
 
