@@ -148,15 +148,14 @@ When you click the "submit" button, the the data will be put into a chart for yo
 
 Results
 -----
-Question: Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media?
+Note that in the graphs, we scale every dataset to a percentage of the maximum value of that dataset, so each line starts at zero and rises to 100%. This allows us to view the data on the same scale, and we can compare the rates of increase of all of the datasets. 
 
 ![Bootstrap](http://i.imgur.com/vhOOFPq.png)
 ![Angular](http://i.imgur.com/AveyEZA.png)
 ![Rails](http://i.imgur.com/nWQXc4t.png)
 
-Note that in the graphs, we scale every dataset to a percentage of the maximum value of that dataset, so each line starts at zero and rises to 100%. This allows us to view the data on the same scale. 
 
-In our hypothesis, we stated that we thought we would see the contributors increase dramatically before social media mentions. This seems to be the case:
+Our question was this: Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media? In our hypothesis, we stated that we thought we would see the contributors increase dramatically before social media mentions. This seems to be the case:
 
 ![](http://i.imgur.com/bdM7YMg.png)
 
