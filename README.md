@@ -148,16 +148,26 @@ When you click the "submit" button, the the data will be put into a chart for yo
 
 Results
 -----
+Question: Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media?
 
 ![Bootstrap](http://i.imgur.com/vhOOFPq.png)
 ![Angular](http://i.imgur.com/AveyEZA.png)
 ![Rails](http://i.imgur.com/nWQXc4t.png)
 
-- Analysis
+Note that in the graphs, we scale every dataset to a percentage of the maximum value of that dataset, so each line starts at zero and rises to 100%. This allows us to view the data on the same scale. 
 
-- Answer to question
+In our hypothesis, we stated that we thought we would see the contributors increase dramatically before social media mentions. This seems to be the case:
+
+![](http://i.imgur.com/bdM7YMg.png)
+
+In each of our three repositories, you can see the contributors per month as well as the commits per month rise quickly before the Stack Overflow or Reddit counts start to increase (as we expected), and you can see the rate of increase of the Stack Overflow/Reddit data always overtakes the rate of increase of the contributors and commits per month. The Stack Overflow questions per month and Reddit posts per month seem to increase at a relatively linear rate, though all seem to be levelling off a bit since early 2014. This could be because people do not feel the need to post a question on Stack Overflow or post on Reddit because similar questions/posts already exist, leading to a reduced rate of new questions/posts.
+
+The Angular graph has a couple of interesting points. In the other two repositories, the commits and contributors lines seem to very closely resemble each other, but for the first few years, Angular has a very small number of contributors per month before it catches up with the commits. Another interesting part of the Angular graph is that development seemed to jump around mid-2012, where everything sharply increases (this is also where the contributors per month line catches up with the commits per month line). By the end of 2013, the commits/contributors are hovering around 100% of their maximum value. If you look at the [number of releases per year](https://github.com/angular/angular.js/releases?), there were 19 in 2013, followed by 56 in 2014, so you can definitely see the effects of this increased development effort. Version 1.0.0 of Angular was released on 14 Jun 2012, around the time that the contributors/commits start to increase sharply, so it's possible that this release led to a large number of new developers. This also may explain why the number of commits/contributors for Angular don't seem to match up early on, as few developers were doing all of the work up to version 1.0.0's release. As more people joined in, each contributor had to do less work on average, so the contributors line catches up with the commits line after this point. 
+
+It seems like we may have an answer to our question, based on the graphs for our 3 interesting respositories. As we guessed in our hypothesis, we see a sharp increase in commits per month and contributors per month before Stack Overflow and Reddit mentions increase. This suggests that in order to gain a "foothold" on social media, there needs to be a certain threshold of contributors. This is similar to how an image or video goes viral on social media - you need a strong foothold before the general public catches on and the image or video starts spreading around the world. If the initial number of people sharing it is too low, it won't go viral. 
 
 - Threats to Validity
+not enough data, not enough metrics?
 
 - Future Work
 Adjustable timeframes for the scripts, script to run all 4 scripts together, more metrics. 
