@@ -21,8 +21,8 @@ To answer our project question, we needed two compare two categories of projects
   - Number of contributors per month
   - Number of commits per month
 - Social Media Activity
-  - Number of posts for each month in the Subreddits for each project
-  - Number of Stack Overflow questions asked in a weekly period of each month that are tagged with the appropriate project tag
+  - Number of posts for each month in the Subreddits for each project (r/angularjs, r/rails, r/bootstrap)
+  - Number of Stack Overflow questions asked in one-week period of each month that are tagged with the appropriate project tag (angularjs, twitter-bootstrap, ruby-on-rails)
 
 Methodology
 --------
@@ -45,7 +45,8 @@ Milestones (Revised March 24, 2015)
 |3|**Create Python program to automatically run git log and get the data we need from a repository (# of contributors, project size)**|Mar. 17|Ryan|Completed|
 |4|**Create Python program to automatically retrieve a count of mentions of a certain project from Reddit API**|Mar. 24|Colin|Completed|
 |5|**Create Python program to run the previous three programs and graph their outputted data**|Mar. 30|Everyone|Completed|
-|6|**Perform analysis on graphs**|Apr. 10|Everyone|Completed|
+|6|**Go overboard making the graphs look cool**|Apr. 10|Colin|Completed|
+|7|**Perform analysis on graphs**|Apr. 15|Everyone|Completed|
 
 Installing Dependencies
 -----
