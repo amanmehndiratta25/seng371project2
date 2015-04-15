@@ -174,7 +174,7 @@ The most obvious threat to validity is the fact that we used a very small data s
 Future Work
 -----
 
-For future work, the first thing on the list would be to create a master script that would automate all of the running of the metric-gathering scripts. With a master script, we would also be able to pass variables to the script such as the time frame that they would be looking at, or the repository location. This would make the program much more flexible. Next, it would be a good idea to further research social media sites and git repositories to come up with accurate metrics and data sources to eliminate the above mentioend threats to validity.
+For future work, the first thing on the list would be to create a master script that would automate all of the running of the metric-gathering scripts. With a master script, we would also be able to pass variables to the script such as the time frame that they would be looking at, or the repository location. This would make the program much more flexible. Next, it would be a good idea to further research social media sites and git repositories to come up with accurate metrics and data sources to eliminate the above mentioned threats to validity.
 
 Demo
 -----
