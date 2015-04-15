@@ -166,11 +166,15 @@ The Angular graph has a couple of interesting points. In the other two repositor
 
 It seems like we may have an answer to our question, based on the graphs for our 3 interesting respositories. As we guessed in our hypothesis, we see a sharp increase in commits per month and contributors per month before Stack Overflow and Reddit mentions increase. This suggests that in order to gain a "foothold" on social media, there needs to be a certain threshold of contributors. This is similar to how an image or video goes viral on social media - you need a strong foothold before the general public catches on and the image or video starts spreading around the world. If the initial number of people sharing it is too low, it won't go viral. 
 
-- Threats to Validity
-not enough data, not enough metrics?
+Threats to Validity
+-----
 
-- Future Work
-Adjustable timeframes for the scripts, script to run all 4 scripts together, more metrics. 
+The most obvious threat to validity is the fact that we used a very small data sample. We can't conclude for sure that our hypothesis is correct if we haven't explored a comprehensive set of data that covers all possible characteristics of data. For example, the types of codebases we looked at were fairly similar in nature; we would want to look at different types of codebases. Another possible threat to validity would be the metrics we used in coming up with the answer to our question. It could be debated that number of contributors and number of commits per month are not an accurate representation of a project's size/popularity. It could also be debated that stack overflow questions and reddit posts are not accurate representations of a project's public popularity. For example, as was mentioned above, Stack Overflow posts per month will naturally decrease as newer people's questions would already have been answered previously, so they would have no need to post a new question. These are very specific communities and their workings must be taken into account when deriving an accurate metric.
+
+Future Work
+-----
+
+For future work, the first thing on the list would be to create a master script that would automate all of the running of the metric-gathering scripts. With a master script, we would also be able to pass variables to the script such as the time frame that they would be looking at, or the repository location. This would make the program much more flexible. Next, it would be a good idea to further research social media sites and git repositories to come up with accurate metrics and data sources to eliminate the above mentioend threats to validity.
 
 Demo
 -----
