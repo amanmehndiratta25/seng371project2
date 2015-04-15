@@ -4,9 +4,9 @@ Colin Knowles (@knowlesc) and Ryan McDonald (@ryanmcdonald)
 
 Question
 -------
-Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media? 
+Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to talk about it on social media? 
 
-**Hypothesis**: We think that the number of contributors/project size should drive the mentions on social media. We think that in order to gain a "foothold" on social media-type sites, a project would need a certain number of contributors, so we will see the contributors increase dramatically before we see social media mentions start to increase. After this initial activity..... who knows what will happen.
+**Hypothesis**: We think that the number of contributors/project size should drive the mentions on social media. We think that in order to gain a "foothold" on social media-type sites, a project would need a certain number of contributors, so we will see the contributors increase dramatically before we see social media mentions start to increase. After this initial activity... who knows what will happen.
 
 Datasets
 -------
@@ -15,7 +15,7 @@ Datasets
 **APIs**: [Stack Exchange API](https://api.stackexchange.com), [Reddit API](http://www.reddit.com/dev/api)
 
 **Metrics**:
-To answer our project question, we needed two compare two categories of projects: Project Size vs Social Media Activity. Using these two sets of metrics we can try to determine whether or not there is a correlation.
+To answer our project question, we needed to compare two categories of projects: Project Size vs Social Media Activity. Using these two sets of metrics we can try to determine whether or not there is a correlation.
 
 - Project Size
   - Number of contributors per month
@@ -145,7 +145,7 @@ If you see something like this, then you can navigate to http://127.0.0.1:5000 t
 
 ![](http://i.imgur.com/8Em3gcb.png)
 
-When you click the "submit" button, the the data will be put into a chart for your viewing pleasure.
+When you click the "submit" button, the data will be put into a chart for your viewing pleasure.
 
 Results
 -----
@@ -156,7 +156,7 @@ Note that in the graphs, we scale every dataset to a percentage of the maximum v
 ![Rails](http://i.imgur.com/nWQXc4t.png)
 
 
-Our question was this: Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to use social media? In our hypothesis, we stated that we thought we would see the contributors increase dramatically before social media mentions. This seems to be the case:
+Our question was this: Does the activity on Stack Overflow, or social media sites such as Twitter, drive the number of contributors/size of a project or does actually contributing to the project tend to drive users to talk about it on social media? In our hypothesis, we stated that we thought we would see the contributors increase dramatically before social media mentions. This seems to be the case:
 
 ![](http://i.imgur.com/bdM7YMg.png)
 
